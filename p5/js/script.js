@@ -24,6 +24,9 @@ loadSound = function(sound) {
 };
 playSound = function(sound) {
   var bufferSource;
+  if (!sound.data) {
+    return;
+  }
   bufferSource = ctx.createBufferSource();
   bufferSource.buffer = sound.data;
   bufferSource.connect(ctx.destination);
