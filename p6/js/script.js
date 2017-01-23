@@ -33,8 +33,8 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 ctx = new AudioContext();
 soundList = [
   {url: '../media/miss.mp3', data: null},
-  {url: '../media/beat.mp3', data: null},
   {url: '../media/gun.mp3', data: null},
+  {url: '../media/beat.mp3', data: null},
   {url: '../media/slash.mp3', data: null}
 ];
 soundList.forEach(loadSound);
